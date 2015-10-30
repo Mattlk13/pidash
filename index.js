@@ -4,6 +4,8 @@ var scrapeGithub = require('./scrape');
 
 var fb = pitft("/dev/fb1", true);
 
+var GITHUB_USERNAME = process.env.GITHUB_USERNAME;
+
 fb.clear();
 var TIME_FONT_SIZE = 14,
     MONTH_FONT_SIZE = 12,
@@ -161,7 +163,7 @@ function render() {
 }
 
 function updateData() {
-  scrapeGithub().then(function(data) {
+  scrapeGithub(GITHUB_USERNAME).then(function(data) {
     // console.log(data)
     githubData = data;
   })

@@ -1,8 +1,8 @@
 var fetch = require('node-fetch'),
   htmlparser = require('htmlparser2');
 
-function scrape() {
-  return fetch('https://github.com/users/jstrutz/contributions')
+function scrape(username) {
+  return fetch('https://github.com/users/'+username+'/contributions')
     .then(function(res) {
       return res.text();
     })
