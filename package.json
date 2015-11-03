@@ -4,15 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sync-pidash": "rsync -avru --delete . pi@192.168.1.98:/home/pi/pidash --exclude .git --exclude node_modules"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-core": "^6.0.20",
-    "babel-plugin-external-helpers-2": "^6.0.15",
-    "babel-preset-es2015": "^6.0.14",
-    "babel-runtime": "^6.0.14",
+    "babel-core": "^5.8.33",
+    "babel-runtime": "^5.8.29",
     "htmlparser2": "^3.8.3",
     "node-fetch": "^1.3.3",
     "rx": "^4.0.6"
