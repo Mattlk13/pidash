@@ -1,8 +1,10 @@
 # Pidash
 
-A personal desktop dashboard, showing Github contributions and a clock, running on a Raspberry Pi and an Adafruit PiTFT display.
+A personal desktop dashboard, showing Github contributions and a clock, running on a [Raspberry Pi](http://raspberrypi.org) and an [Adafruit PiTFT display](https://www.adafruit.com/products/1601).
 
 Pidash is written in NodeJS, and uses RxJS to manage asynchronous event streams.
+
+![screenshot](https://cloud.githubusercontent.com/assets/47222/11027498/a531803a-866a-11e5-8555-56e8c5a2bbdf.png)
 
 ## Installation
 
