@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sync-pidash": "rsync -avru --delete . pi@192.168.1.98:/home/pi/pidash --exclude .git --exclude node_modules"
+    "sync-pidash": "rsync -avru --delete . pi@192.168.1.98:/home/pi/pidash --exclude .git --exclude node_modules",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register test/*_test.js",
+    "test:watch": "npm run test -- --watch"
   },
   "author": "",
   "license": "ISC",
